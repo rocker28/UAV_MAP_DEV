@@ -1,0 +1,57 @@
+/* Section 2 */
+.section2-set {
+    padding: 50px 0;
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+}
+
+.section2-set__ttl {
+    font-size: 32px;
+    font-weight: bold;
+    line-height: 1.2;
+    margin-bottom: 20px;
+}
+
+.section2-set__ttl-icon {
+    margin-top: 10px;
+}
+
+
+.js-drone-parallax.simple-parallax-initialized:hover {
+    transform: scale(1.1);
+}
+
+.section2-set__note {
+    font-size: 20px;
+    margin-top: 20px;
+    display: block;
+    font-weight: bold;
+}
+
+.section2-set__note span {
+    color: #007bff;
+}
+
+/* Animation for fade-up */
+@keyframes fade-up {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+[data-aos="fade-up"] {
+    animation: fade-up 1s ease forwards;
+    opacity: 0;
+}
+
+/* Triggering the animation on scroll */
+.section2-set.aos-animate {
+    opacity: 1;
+    animation: fade-up 1s ease forwards;
+}

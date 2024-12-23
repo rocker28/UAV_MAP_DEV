@@ -1,0 +1,147 @@
+{% extends 'indexpage.html' %}
+{% block baseblock %}
+{% load static %}
+<link rel="stylesheet" href="{% static 'css/styles_homepage.css' %}">
+<link rel="stylesheet" href="{% static 'css/styles_home_section2.css' %}">
+<div class="content">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8">
+			    <h1 class="main-heading">UAV Mapping Technology</h1>
+                <div class="inner-1">
+                    <div class="card-3d">
+                        <p class="text_spacing">
+                            UAV Mapping refers to the use of Unmanned Aerial Vehicles (drones) to capture aerial data, including images, 
+                            videos, and LiDAR, which are processed to create detailed maps, 3D models, and geographic information system (GIS) data.
+                            This technology is widely used in industries like agriculture, construction, surveying, and environmental 
+                            monitoring for accurate and efficient mapping and analysis.
+                        </p>
+                    </div>
+
+                    <div class="types-container">
+							<h2 class="title1">
+							  <span class="highlight1">Types of UAV Mapping</span>
+							</h2>
+                        <!-- Slider Animation -->
+                        <input type="radio" name="tech-position" id="photogrammetry" checked>
+                        <input type="radio" name="tech-position" id="lidar-mapping">
+                        <input type="radio" name="tech-position" id="thermal-mapping">
+                        <input type="radio" name="tech-position" id="multispectral-mapping">
+                        <input type="radio" name="tech-position" id="sar-mapping">
+						<input type="radio" name="tech-position" id="Magnetometer-Mapping">
+						
+                        <main id="carousel">
+                            <div class="tech-content item" data-position="1">
+                                <h3>1. Photogrammetry</h3>
+                                <p>Photogrammetry involves capturing a series of overlapping images from a UAV to create accurate 2D maps and 3D models. 
+								   These images are processed to generate orthomosaics, digital elevation models (DEMs), and 3D point clouds.
+								   Applications: Used in surveying, construction, and agriculture to measure distances, areas, and volumes, and for creating detailed topographic maps.
+								</p>
+                            </div>
+                            <div class="tech-content item" data-position="2">
+                                <h3>2. LiDAR Mapping</h3>
+                                <p>LiDAR (Light Detection and Ranging) uses laser pulses emitted from a UAV to measure distances to the ground or other objects. 
+								   This data is used to create highly accurate 3D models of the terrain, even through vegetation.
+							       Applications: Ideal for forestry, environmental monitoring, and infrastructure projects where precise elevation data is required.
+								</p>
+                            </div>
+                            <div class="tech-content item" data-position="3">
+                                <h3>3. Thermal Mapping</h3>
+                                <p>Thermal mapping utilizes thermal cameras on UAVs to capture temperature variations across a surface. 
+								   The data is used to create thermal maps that highlight heat patterns and anomalies.
+                                   Applications: Commonly used in agriculture for crop health monitoring, building inspections for energy efficiency, and in search and rescue operations.
+								</p>
+                            </div>
+                            <div class="tech-content item" data-position="4">
+                                <h3>4. Multispectral Mapping</h3>
+                                <p>Multispectral and hyperspectral mapping involve capturing images in multiple wavelengths of light, beyond the visible spectrum. 
+								   This data provides insights into vegetation health, soil conditions, and water quality.
+                                   Applications: Widely used in precision agriculture, environmental monitoring, and mineral exploration.
+								</p>
+                            </div>
+                            <div class="tech-content item" data-position="5">
+                                <h3>5. SAR Mapping</h3>
+                                <p>SAR (Synthetic Aperture Radar) mapping uses radar sensors on UAVs to create images of the Earth's surface. 
+								   Unlike optical systems, SAR can capture data in all weather conditions, day or night.
+                                   Applications: Used in geology, disaster management, and military reconnaissance for terrain mapping and monitoring surface changes.
+								</p>
+                            </div>
+                            <div class="tech-content item" data-position="6">
+                                <h3>6. Magnetometer Mapping</h3>
+                                <p>This type of mapping uses UAVs equipped with magnetometers to detect magnetic fields and anomalies in the Earth's crust.
+								   It’s particularly useful in mineral exploration and archaeology.
+                                   Applications: Employed to locate buried objects, mineral deposits, and geological features.
+								</p>
+                            </div>							
+                        </main>
+                        <!-- Visible Dots for Navigation -->
+                        <div class="nav-dots">
+                            <label for="photogrammetry" class="dot"></label>
+                            <label for="lidar-mapping" class="dot"></label>
+                            <label for="thermal-mapping" class="dot"></label>
+                            <label for="multispectral-mapping" class="dot"></label>
+                            <label for="sar-mapping" class="dot"></label>
+							<label for="Magnetometer-Mapping" class="dot"></label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+			<div class="youtube-section">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-12">
+							<h2 class="video-title"><span>Technology</span> we use</h2>							
+							<!-- Video 1 -->
+							<div class="video-box">
+								<a href="https://www.youtube.com/watch?v=Blr3suSQt-Q" target="_blank">
+									<div class="video-thumbnail">
+										<img src="https://img.youtube.com/vi/Blr3suSQt-Q/0.jpg" alt="Video Thumbnail">
+										<div class="play-button"></div>
+									</div>
+								</a>
+								<span style="font-size: 14px; color: #25203d; text-decoration: underline;">Aerial Photogrammetry Explained - Create 3D Models With Drone Photos</span>
+							</div>
+
+							<!-- Video 2 -->
+							<div class="video-box">
+								<a href="https://www.youtube.com/watch?v=zREAEdXzOcw" target="_blank">
+									<div class="video-thumbnail">
+										<img src="https://img.youtube.com/vi/zREAEdXzOcw/0.jpg" alt="Video Thumbnail">
+										<div class="play-button"></div>
+									</div>
+								</a>
+								<span style="font-size: 14px; color: #25203d; text-decoration: underline;">What are the Top 5 uses of Lidar? Why is Lidar so important?</span>
+							</div>
+
+							<!-- Video 3 -->
+							<div class="video-box">
+								<a href="https://www.youtube.com/watch?v=Tl1YkbdcEgU" target="_blank">
+									<div class="video-thumbnail">
+										<img src="https://img.youtube.com/vi/Tl1YkbdcEgU/0.jpg" alt="Video Thumbnail">
+										<div class="play-button"></div>
+									</div>
+								</a>
+								<span style="font-size: 14px; color: #25203d; text-decoration: underline;">Applications of Remote Sensing in Precision Farming</span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+        </div>
+    </div>
+</div>
+
+<section class="section2-set aos-init aos-animate" data-aos="fade-up">
+    <div class="fix-container">
+        <h2 class="section2-set__ttl">
+             Highly specialized in services Aerial Survey, LiDAR-Mapping & Drone Imaging <br>
+            <mark class="highlight"> specialized and equipped with advanced technologies in UAV-MAPPING </mark> 
+			Trusted by Gov. & Pvt. Agencies in All States
+        </h2>
+        <span class="section2-set__note">Advance<span>Survey</span>
+		    <a class="btn btn-primary bg-dark" href="{% url 'AUTOMAP_SERVICE'%}" role="button">Request Information</a>
+		</span>
+    </div>
+</section>
+
+{% endblock baseblock %}

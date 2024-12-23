@@ -1,0 +1,54 @@
+{% extends 'indexpage.html' %}
+{% load crispy_forms_tags %}
+{% block baseblock %}
+{% load static %}
+<link rel="stylesheet" href="{% static 'css/tech.css' %}">
+
+<h1 class="main-heading">UAV Technology we are using </h1>
+
+<div class="content">
+    <div class="container">
+        <!-- First Section: Centered Video -->
+        <section class="mavic3e top-section">
+            <div class="card-3d">
+                <h2>DJI MAVIC-3 Enterprise (T) </h2>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/R1lT-NatLMA?si=zBeduvC03k2BWcd3" 
+                title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; 
+                encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                <p>DJI Mavic 3 Enterprise Series, a compact, portable, powerful, and extensive series that redefines the standards for small commercial drones and driving forward a new era of lightweight operations.Addition to this Mavic 3 Enterprise T (Thermal) equipped with thermal camera to record thermal imaging view.</p>
+                <p>The DJI Mavic 3E is equipped with a mechanical shutter, a 56x zoom camera and an RTK module for centimeter-level precision, making it the ideal tool for utility inspection, surveying and mapping missions. The DJI Mavic 3T equipped with a thermal camera and takes Search and Rescue missions to the next level.</p>
+			</div>
+        </section>
+
+        <!-- Second Section: Two Videos Side by Side -->
+        <div class="card-container">
+            <!-- First Video Card -->
+            <section class="mavic3e">
+                <div class="card-3d">
+                    <h2>DJI MAVIC 3 PRO</h2>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/r5kukRMmZNI?si=JDH0uzpUx14AnuF1" 
+                    title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; 
+                    encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    <p>Mavic 3 Pro brings a triple camera system to the Mavic series for the first time - putting unrivaled creative freedom and efficiency in your hands. The stunning 4/3 CMOS Hasselblad Camera is joined by an upgraded 166mm tele camera and an all-new 70mm f/2.8 medium tele camera. </p>
+                    <p>Mavic 3 Pro is also packed full of intelligent features designed to help you get the shot you need. Whether its FocusTrack to keep your shot locked-on to your subject, the omnidirectional obstacle avoidance or the DJI O3+ video transmission that gives you high-quality transmission up to 15km, Mavic 3 Pro has you covered. </p>
+				</div>
+            </section>
+
+            <!-- Second Video Card -->
+            <section class="mavic3e">
+                <div class="card-3d">
+                    <h2>DJI MINI 4 PRO </h2>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/nbXneZzFh8w?si=gO18wII6kAUrBctF" 
+                    title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; 
+                    encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+					<p>From the omnidirectional obstacle avoidance that makes flying safer, to an improved imaging processing platform and an all new ActiveTrack 360 mode that makes creating solo easier than ever, the Mini 4 Pro is an evolution.</p>
+                    <p>The DJI Mavic 3 Pro is a high-end drone designed for professional surveying, mapping, and video imaging applications. It features a 20MP Hasselblad camera, high-precision RTK module, and 56x zoom camera for detailed inspections. It's perfect for applications like infrastructure inspection, photogrammetry, and cinematic productions. </p>
+				</div>
+            </section>
+        </div>
+    </div>
+</div>
+
+<h3 class="bottom-remark">Credit : SZ DJI Technology Co., Ltd, all equipments are arrangend by our team as per requirement of project </h3>
+
+{% endblock baseblock %}

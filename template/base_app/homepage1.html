@@ -1,0 +1,99 @@
+{% extends 'indexpage.html' %}
+
+{% block baseblock %}
+{% load static %}
+<link rel="stylesheet" href="{% static 'css/styles_homepage.css' %}">
+
+<div class="content">
+    <div class="container">
+        <!-- Your main content here -->
+        <div class="row">
+            <div class="col-md-8">
+                <h2>UAV Mapping Technology </h2>
+				<div class="inner-1">
+					<div class="card-3d">
+						<p class="text_spacing">
+							UAV Mapping refers to the use of Unmanned Aerial Vehicles (drones) to capture aerial data, including images, 
+							videos, and LiDAR, which are processed to create detailed maps, 3D models, and geographic information system (GIS) data.
+							This technology is widely used in industries like agriculture, construction, surveying, and environmental 
+							monitoring for accurate and efficient mapping and analysis.
+						</p>
+					</div>
+					
+					<div class="types-container">
+						<h4> <span style="color:#ee2f2e;">There are multiple technologies associated with UAV Mapping:</span> </h4>
+						<!--div class="row">
+							<div class="col-md-4 card-3d">
+								<input type="text" value="1. Photogrammetry" readonly>
+							</div>
+							<div class="col-md-4 card-3d">
+								<input type="text" value="2. LiDAR Mapping" readonly>
+							</div>
+							<div class="col-md-4 card-3d">
+								<input type="text" value="3. Thermal Mapping" readonly>
+							</div>
+						</div>
+
+						<div class="row">
+							<div class="col-md-4 card-3d">
+								<input type="text" value="4. Multispectral and Hyperspectral Mapping" readonly>
+							</div>
+							<div class="col-md-4 card-3d">
+								<input type="text" value="5. SAR (Synthetic Aperture Radar) Mapping" readonly>
+							</div>
+							<div class="col-md-4 card-3d">
+								<input type="text" value="6. Magnetometer Mapping" readonly>
+							</div>
+						</div-->
+						<input type="radio" name="uav-tech" id="radio-1" checked/>
+						<label for="radio-1">Photogrammetry</label>
+
+						<input type="radio" name="uav-tech" id="radio-2"/>
+						<label for="radio-2">LiDAR Mapping</label>
+
+						<input type="radio" name="uav-tech" id="radio-3"/>
+						<label for="radio-3">Thermal Mapping</label>
+
+						<input type="radio" name="uav-tech" id="radio-4"/>
+						<label for="radio-4">Multispectral Mapping</label>
+
+						<input type="radio" name="uav-tech" id="radio-5"/>
+						<label for="radio-5">SAR Mapping</label>
+
+						<div id="uav-tech-content">
+						  <div class="tech-content">
+							<h2>Photogrammetry</h2>
+							<p>Photogrammetry is the science of making measurements from photographs...</p>
+						  </div>
+						  <div class="tech-content">
+							<h2>LiDAR Mapping</h2>
+							<p>LiDAR (Light Detection and Ranging) is a remote sensing technology...</p>
+						  </div>
+						  <div class="tech-content">
+							<h2>Thermal Mapping</h2>
+							<p>Thermal mapping uses thermal cameras to capture temperature data...</p>
+						  </div>
+						  <div class="tech-content">
+							<h2>Multispectral Mapping</h2>
+							<p>Multispectral mapping uses sensors to capture data across multiple spectral bands...</p>
+						  </div>
+						  <div class="tech-content">
+							<h2>SAR Mapping</h2>
+							<p>SAR (Synthetic Aperture Radar) mapping uses radar pulses to capture data...</p>
+						  </div>
+						</div>
+					
+					</div>    
+				</div>
+			
+            </div>
+            <div class="col-md-4">
+                <div class="gif-container float-right ml-auto">
+                    <img src="{% static 'images/11speedinal.gif' %}" alt="Body Animation" class="body-animation" >     <!--style="width: 300px; height: auto;"-->
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+{% endblock baseblock %}

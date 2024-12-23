@@ -1,0 +1,56 @@
+{% extends 'indexpage.html' %}
+{% load crispy_forms_tags %}
+{% block baseblock %}
+{% load static %}
+
+<link rel="stylesheet" href="{% static 'css/services.css' %}">
+
+<div class="content#1">
+    <div class="container d-flex flex-wrap">
+        <!-- First Section: Centered Video and Service Form Side by Side -->
+        <div class="col-md-8 p-4 card-3d">
+            <h2 class="card-heading">Aerial Data Collection</h2>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/R1lT-NatLMA?si=zBeduvC03k2BWcd3"
+                title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write;
+                encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <h5>1. LiDAR (Light Detection and Ranging) Data</h5>
+            <h5>2. Remote sensing Data</h5>
+            <h5>3. Geophysical Data</h5>
+            <p>DJI Mavic 3 Enterprise Series, a compact, portable, powerful, and extensive series that redefines the standards for small commercial drones and driving forward a new era of lightweight operations. Mavic 3 Enterprise T (Thermal) is equipped with a thermal camera to record thermal imaging views.</p>
+        </div>
+
+        <div class="col-md-4 p-4 bg-light rounded" style="border: 1px solid #ccc; margin-right: 0;">
+            <h2>Service Enquiry</h2>
+            <form method="post">
+                {% csrf_token %}
+                <div class="form-group">
+                    {{ form|crispy }}
+                </div>
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Second Section: Two 3D Cards Side by Side -->
+    <div class="card-container">
+        <!-- First Video Card -->
+        <div class="card-3d">
+            <h2 class="card-heading">Aerial Survey</h2>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/r5kukRMmZNI?si=JDH0uzpUx14AnuF1"
+            title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write;
+            encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <p>Mavic 3 Pro brings a triple camera system to the Mavic series for the first time - putting unrivaled creative freedom and efficiency in your hands.</p>
+        </div>
+
+        <!-- Second Video Card -->
+        <div class="card-3d">
+            <h2 class="card-heading">Aerial Thermal Mapping</h2>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/nbXneZzFh8w?si=gO18wII6kAUrBctF"
+            title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write;
+            encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <p>The Mini 4 Pro is packed with features like omnidirectional obstacle avoidance and ActiveTrack 360 mode, making flying safer and easier.</p>
+        </div>
+    </div>
+</div>
+
+{% endblock baseblock %}

@@ -1,0 +1,58 @@
+{% extends 'indexpage.html' %}
+{% load crispy_forms_tags %}
+{% block baseblock %}
+{% load static %}
+
+<link rel="stylesheet" href="{% static 'css/about-us.css' %}">
+
+<div class="content">
+    <div class="container">
+        <!-- About Us Section -->
+        <section class="about-us">
+            <div class="card-3d">
+                <h2>About Us</h2>
+                <p>Welcome to AUTO-MAP. At AUTO-MAP, we are pioneers in the field of UAV (Unmanned Aerial Vehicle) mapping, harnessing cutting-edge technology to deliver unparalleled surveying solutions. Our expertise spans a broad spectrum of services, including video imaging surveys, photogrammetry, and LIDAR (Light Detection and Ranging) surveys.</p>
+                <p>Our core strength lies in video imaging surveys. Leveraging the latest in UAV technology, we capture high-resolution video footage to provide comprehensive insights into various domains. Whether it's monitoring construction sites, assessing agricultural land, or surveying urban and forested areas, our video surveys offer a clear and detailed view, enabling you to make informed decisions.</p>
+                <p>In addition to our video surveys, we offer specialized photogrammetry and LIDAR surveys. Our photogrammetry services involve analyzing and interpreting photographic images to create detailed 3D models and maps. Our LIDAR surveys utilize laser technology to measure distances and generate precise topographical maps, providing crucial data for various applications.</p>
+            </div>
+        </section>
+
+        <!-- Why Choose Us Section -->
+        <section class="why-choose-us">
+            <div class="card-3d">
+                <h2>Why Choose Us?</h2>
+                <ul>
+                    <li><strong>Advanced Technology:</strong> We use the latest UAV technology and imaging equipment to ensure accurate and high-quality results.</li>
+                    <li><strong>Expert Team:</strong> Our team comprises skilled professionals with extensive experience in UAV mapping and surveying.</li>
+                    <li><strong>Comprehensive Reporting:</strong> We provide detailed reports and analyses based on our surveys, helping you understand the data and make strategic decisions.</li>
+                    <li><strong>Versatility:</strong> From construction sites to agricultural lands and urban environments, our services are tailored to meet diverse needs.</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Our Mission Section -->
+        <section class="our-mission">
+            <div class="card-3d">
+                <h2>Our Mission</h2>
+                <p>At AUTO-MAP, our mission is to revolutionize the way surveys are conducted by combining technological innovation with expert knowledge. We strive to deliver precise, reliable, and actionable data to our clients, empowering them to achieve their goals with confidence.</p>
+            </div>
+        </section>
+
+        <!-- Contact Us Section -->
+        <section class="contact-us">
+            <div class="card-3d">
+                <h2>Contact Us</h2>
+                <p>Ready to experience the future of surveying? Contact us today to learn more about our services or to schedule a consultation. We look forward to working with you and bringing clarity to your projects with our state-of-the-art UAV mapping solutions.</p>
+                <p><a href="mailto:info@auto-map.com" class="contact-link">Write to Us</a><Span>: info@auto-map.com</span></p>
+				<p>Call us: <Span>+91-9669048900</span></p-->
+				<p>Find us: <Span>NEW MLA QUARTERS,NEAR T.T. NAGAR,BHOPAL,M.P., INDIA </span></p>
+				<p>	<span class="set__note">Want to<span>KNOW MORE</span>
+						 <a class="btn btn-primary bg-dark" href="{% url 'AUTOMAP_SERVICE'%}" role="button">Request Information</a>
+					</span>
+			
+            </div>
+        </section>
+    </div>
+</div>
+
+{% endblock baseblock %}

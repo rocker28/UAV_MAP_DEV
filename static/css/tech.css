@@ -1,0 +1,84 @@
+.main-heading {
+    font-size: 3.5 rem; /* Large font size for emphasis */
+    font-weight: 800; /* Bold text */
+    text-align: center; /* Center the heading */
+    color: #010f33; /* Darker color for elegance */
+    letter-spacing: 1px; /* Increase space between letters */
+    text-transform: uppercase; /* Make the text uppercase */
+    font-family: 'Baskervville SC', serif; /* Stylish, modern font */
+}
+
+/* General Container Styles */
+.content {
+    padding: 20px;
+    max-width: 1400px;
+    margin: auto;
+    color: #fff;
+}
+
+/* Single Top Section Centered */
+.top-section {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+/* Card Container for Two Side-by-Side Videos */
+.card-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+/* Card 3D Design */
+.card-3d {
+    background-color: rgba(0, 0, 0, 0.75);
+    border-radius: 10px;
+    box-shadow: 10px 10px 30px rgba(255, 255, 255, 0.5);
+    padding: 20px;
+    width: 100%;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card-3d:hover {
+    transform: translateY(-15px) rotateX(10deg) rotateY(-10deg);
+    box-shadow: 15px 15px 40px rgba(0, 0, 0, 0.6);
+}
+
+/* Heading Styles */
+h2 {
+    position: relative;
+    color: #fff;
+    text-align: center;
+    padding-bottom: 20px; /* Add space below the heading to push content down */
+}
+
+h2::after {
+    content: "";
+    position: absolute;
+    bottom: 0px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%; /* Adjust the width to control the length of the line */
+    height: 5px;
+    background: linear-gradient(to right, transparent, #3917fc 50%, transparent);
+}
+
+/* Paragraph Styles */
+p {
+    color: #fff;
+    margin-top: 15px; /* Add spacing between paragraph and other content */
+    text-align: left; /* Ensure paragraphs are left-aligned */
+}
+
+/* Flexbox Adjustments for Responsiveness */
+@media (max-width: 768px) {
+    .card-container {
+        flex-direction: column;
+    }
+
+    iframe {
+        width: 100%;
+    }
+}

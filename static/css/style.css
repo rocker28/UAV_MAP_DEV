@@ -1,0 +1,90 @@
+
+/* General Image Styling */
+.header-image {
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+    object-fit: contain;
+}
+
+/* Website Name Styling */
+.website-name {
+    position: absolute;
+    top: 10px;  /* Adjust as needed */
+    left: 15%;
+    transform: translateX(-50%);
+    font-size: 24px; /* Adjust the font size as needed */
+    color: red;    /* Red text color */
+    text-decoration: none;
+    font-weight: bold;
+    background-color: transparent; /* Transparent background */
+    border: 2px solid red; /* Red border */
+    padding: 8px 16px; /* Adjust padding to make it look like a button */
+    border-radius: 5px; /* Rounded corners */
+    transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.website-name:hover {
+    background-color: red; /* Red background on hover */
+    color: white; /* White text on hover */
+}
+
+
+/* body background */
+.main-content {
+    background-image: url("/static/images/body3.gif");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding-top: 20px; /* adjust this value to add space between navbar and page content */
+    padding-bottom: 20px; /* adjust this value to add space between page content and footer */
+}
+
+/* Specific Styling for the Line Image in Footer */
+footer .line-image {
+    width: 100%;
+    height: 5px;
+    display: block;
+    margin: 0 auto; /* Center the line image */
+}
+
+/* Social Media Icons */
+footer .list-soc {
+    display: flex;
+    justify-content: flex-end; /* Aligns the icons to the right */
+    align-items: center; /* Vertically centers the icons */
+    gap: 20px; /* Adjusts the spacing between the icons */
+    margin-top: 10px; /* Adjusts the position above the lines */
+    padding-right: 20px; /* Adds padding from the right */
+    position: absolute;
+    right: 0; /* Positions the icons on the right side */
+    bottom: 10px; /* Positions the icons slightly above the bottom */
+}
+
+footer .list-soc .soc-icon {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%; /* Makes the icons circular */
+    overflow: hidden; /* Ensures the icon fits within the circle */
+    background-color: #333; /* Background color for the icons */
+    padding: 5px; /* Adjusts padding around the icon */
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+footer .list-soc .soc-icon img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+footer .list-soc .soc-icon:hover {
+    background-color: #007bff; /* Change this to match the hover effect on Auto-Map */
+    transform: scale(1.1); /* Slight zoom effect on hover */
+}
+
+/* Ensure the footer has enough height to accommodate the icons */
+footer {
+    position: relative;
+    padding-bottom: 60px; /* Adjust this to give enough space for the icons */
+}
